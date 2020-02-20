@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_product_details"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_order_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_order_total_price_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Value of order id"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/text_view_order_product_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14"
+            tools:text="Value of color "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_order_product_name"
+            android:layout_marginRight="@dimen/margin_8" />
+
+
+        <TextView
+            android:id="@+id/text_view_order_product_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="1"
+            android:layout_marginTop="@dimen/margin_4"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_order_product_color" />
+
+        <TextView
+            android:id="@+id/text_view_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text=" X "
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_order_product_count"
+            app:layout_constraintStart_toEndOf="@+id/text_view_order_product_count"
+            app:layout_constraintTop_toTopOf="@+id/text_view_order_product_count" />
+
+        <TextView
+            android:id="@+id/text_view_single_order_product_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="23.00"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_cross"
+            app:layout_constraintStart_toEndOf="@+id/text_view_cross"
+            app:layout_constraintTop_toTopOf="@+id/text_view_cross" />
+
+        <TextView
+            android:id="@+id/text_view_order_total_price_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="$300"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

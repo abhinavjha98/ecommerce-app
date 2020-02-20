@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:id="@+id/layout_customer_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_radius">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/customer_reviews"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/roboto_regular"
+            android:text=""
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintLeft_toRightOf="@+id/text_view_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_review_count">
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="@color/color_block_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="@dimen/height_48"
+                android:layout_height="@dimen/height_48"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_10"
+                android:src="@drawable/ic_user_fill_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view" />
+
+            <TextView
+                android:id="@+id/text_view_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_10"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/gray_text_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/ratingBarReview"
+                app:layout_constraintStart_toEndOf="@+id/image_view_profile"
+                app:layout_constraintTop_toBottomOf="@+id/line_view"
+                tool:text="User name" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingBarReview"
+                style="@style/SmallRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_10"
+                android:isIndicator="true"
+                android:rating="4.0"
+                android:stepSize="1.0"
+                android:theme="@style/SmallRating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_view" />
+            <TextView
+                android:id="@+id/text_view_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/_12_nov_2019"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorAsh"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintLeft_toRightOf="@+id/image_view_profile"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_username" />
+
+            <TextView
+                android:id="@+id/text_view_review_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_16"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/green_text_color"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_view_profile"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_date"
+                tool:text="I am very happy with my order. Shipping was just a couple weeks. Thank you!" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/margin_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_review_text"
+                app:layout_constraintStart_toStartOf="@+id/text_view_review_text"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@color/color_block_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_2" />
+
+        <TextView
+            android:id="@+id/text_view_seemore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="@string/see_more"
+            android:textColor="@color/blue_text_color"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_view_3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

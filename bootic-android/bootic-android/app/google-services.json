@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "377356740777",
+    "firebase_url": "https://bootic-1568356307035.firebaseio.com",
+    "project_id": "bootic-1568356307035",
+    "storage_bucket": "bootic-1568356307035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377356740777:android:35b2a277aeb23f3df021b8",
+        "android_client_info": {
+          "package_name": "com.w3engineers.ecommerce.bootic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377356740777-avo25go7d3hk1p264g4pm1fn0ma6fofq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5o2Lyqv2ZW5LWmrBdDqGhyz53hxUnxeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377356740777-avo25go7d3hk1p264g4pm1fn0ma6fofq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

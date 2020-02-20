@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp_slider_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:focusableInTouchMode="true">
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <!--START OF DOTS CONATAINER-->
+                    <LinearLayout
+                        android:id="@+id/layout_slider_main_dots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_x"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/fab_margin_half">
+
+                    </LinearLayout>
+                    <!--END OF DOTS CONATAINER-->
+
+                </RelativeLayout>
+
+                <!--START OF CATEGORY RECYCLERVIEW-->
+                <TextView
+                    android:id="@+id/text_view_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_half"
+                    android:layout_marginTop="@dimen/recylerview_margin_y"
+                    android:layout_marginBottom="@dimen/fab_margin_half"
+                    android:text="@string/category"
+                    android:textSize="@dimen/heading_mideum" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingLeft="@dimen/recylerview_margin_x"
+                    android:paddingRight="@dimen/recylerview_margin_x">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/text_view_featured_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_half"
+                    android:layout_marginTop="@dimen/recylerview_margin_y"
+                    android:layout_marginBottom="@dimen/fab_margin_half"
+                    android:text="@string/feature_product"
+                    android:textSize="@dimen/heading_mideum" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_feature_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingLeft="@dimen/recylerview_margin_x"
+                    android:paddingRight="@dimen/recylerview_margin_x">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/text_view_popular_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_half"
+                    android:layout_marginTop="@dimen/recylerview_margin_y"
+                    android:layout_marginBottom="@dimen/fab_margin_half"
+                    android:text="@string/popular_product"
+                    android:textSize="@dimen/heading_mideum" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingLeft="@dimen/recylerview_margin_x"
+                    android:paddingRight="@dimen/recylerview_margin_x">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/text_view_recent_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_half"
+                    android:layout_marginTop="@dimen/fab_margin_half"
+                    android:layout_marginBottom="@dimen/fab_margin_half"
+                    android:text="@string/recent_product"
+                    android:textSize="@dimen/heading_mideum" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_p_detail_product_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingLeft="@dimen/recylerview_margin_x"
+                    android:paddingRight="@dimen/recylerview_margin_x"
+                    android:layout_marginBottom="@dimen/recylerview_margin_y" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorAsh"
+                    android:indeterminateTintMode="src_atop"
+                    android:progressDrawable="@drawable/bg_progress_bar"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

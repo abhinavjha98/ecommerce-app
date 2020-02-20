@@ -1,0 +1,30 @@
+package com.w3engineers.ecommerce.bootic.data.helper.models;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class CartModel {
+    @SerializedName("id")
+    @Expose
+    public int id;
+
+    @SerializedName("title")
+    @Expose
+    public String productName;
+
+    @SerializedName("prev_price")
+    @Expose
+    public float prevPrice;
+
+    @SerializedName("image_name")
+    @Expose
+    public String imageUri;
+
+    @SerializedName("current_price")
+    @Expose
+    public float currentPrice;
+
+    @SerializedName("inventory")
+    @Expose
+    public InventoryModel mInventoryModel;
+}

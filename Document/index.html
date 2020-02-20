@@ -1,0 +1,946 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,700%7CKarma:400,600%7CLibre+Baskerville"
+          rel="stylesheet">
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugin-frameworks/bootstrap-grid.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="common/styles.css">
+
+</head>
+<body>
+
+<div class="loader-container" id="preloader"><div class="progress float shadow"><div class="progress__item"></div></div></div>
+
+
+<header>
+    <div class="container position-relative">
+
+        <div class="menu-bottom">
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="menu-left-area">
+                        <a href="index.html" class="logo"><img class="logo-big" src="images/logo-black.png" alt="Logo Image"></a>
+                    </div>
+
+                    <a class="menu-nav-icon" data-menu-visible="#main-menu" href="#"><i class="fas fa-bars"></i></a>
+
+                    <ul class="nav-visible main-menu" id="main-menu">
+
+                        <li><a target="_blank" href="http://theme1.w3engineers.com/">Home</a></li>
+                        <li><a target="_blank" href="https://themeforest.net/user/w3engineers/portfolio">Themeforest</a>
+                        </li>
+                        <li><a target="_blank" href="https://codecanyon.net/user/w3engineers/portfolio">Codecanyon</a>
+                        </li>
+                        <li><a target="_blank" href="https://w3engineers.com/contact/">Contact</a></li>
+
+                    </ul><!-- main-menu -->
+
+                </div><!-- col-sm-10 -->
+            </div><!-- row -->
+        </div><!-- menu-bottom -->
+    </div><!-- conatiner -->
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="navigation-fixed">
+                    <div class="navigation">
+                        <h5><a class="nav-title" href="#"><b>Navigation</b><i class="fas fa-angle-down"></i></a></h5>
+                        <ul class="navigation-menu">
+
+                            <li><a href="#sec-1">1 - Introduction</a></li>
+                            <li><a href="#sec-2">2 - Folder Structure</a></li>
+                            <li><a href="#sec-3">3 - Requirements</a></li>
+                            <li><a href="#sec-4">4 - Installation</a></li>
+                            <li><a href="#sec-5">5 - Connect the android app to the admin panel</a></li>
+                            <li><a href="#sec-6">6 - Customizing the App</a></li>
+                            <li><a href="#sec-7">7 - Sign in with Google</a></li>
+                            <li><a href="#sec-8">8 - Sign in with Facebook</a></li>
+							<li><a href="#sec-9">9 - SMTP Server Config</a></li>
+                            <li><a href="#sec-10">10 - Admob Configuration</a></li>
+                            <li><a href="#sec-11">11 - Configure firebase for push Notification</a></li>
+                            <li><a href="#sec-12">12 - Publishing the app in Playstore</a></li>
+                            <li><a href="#sec-13">13 - Folder Structure of Admin Panel</a></li>
+                            <li><a href="#sec-14">14 - Functionality of Admin Panel</a></li>
+
+                        </ul>
+                    </div><!--navigation-fixed-->
+                </div><!--navigation-->
+            </div><!--col-md-4-->
+
+            <div class="col-md-8">
+                <div class="main-content">
+
+					<article id="sec-1">
+
+						<div class="top-intro">
+							<h3>Bootic</h3>
+							<h5 class="mb-25 mt-5 color-semi-black">An android eCommerce app with admin panel</h5>
+							<h5 class="mt-10 mb-20">by: W3 Engineers Ltd.</h5>
+							<p>Email: <a class="decoration-un" href="mailto:info@w3engineers.com"><b class="light-color">info@w3engineers.com</b></a></p>
+							<p>At first thank you for purchasing this template. If you have any question or any problem
+								regarding
+								this template, feel free to <a href="mailto:info@w3engineers.com"><b class="light-color">Contact
+								us</b></a> via
+								<a href="mailto:info@w3engineers.com"><b class="light-color">info@w3engineers.com</b></a>.
+							</p>
+						</div>
+
+
+                        <h4 class="title">1 - Introduction</h4>
+                        <p>Bootic is built with native Java in Android Studio. It’s an android e-commerce app with admin panel. 
+						It offers more than 17 pages and all are fully designed & keeping in mind to fit for any product types. 
+						Bootic offers all required features, that can fulfil any modern application. It’s easy to customize, 
+						You can use it as any type of stores like Fashion, Electronics, Grocery and Restaurant. You can customize any page as per your needs. 
+						It follows all the standards to fulfil customer’s requirements.</p>
+                    </article>
+
+                    <article id="sec-2">
+                        <h4 class="title">2 - Folder Structure</h4>
+                        <p><span>2.1</span>Unzip the file.</p>
+                        <p><span>2.2</span>You see the following folders:</p>
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>bootic-android (contain the android files)</p>
+                            <p><i class="fas fa-dot-circle"></i>bootic-admin (admin panel files)</p>
+                            <p><i class="fas fa-dot-circle"></i>db.sql (sql file)</p>
+                            <p><i class="fas fa-dot-circle"></i>server_Configuration_setup_process.mp4 (Tutorial Video)</p>
+
+                        </div>
+                    </article>
+
+					<article id="sec-3">
+                        <h4 class="title">3 - Requirements</h4>
+                       <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>Android Studio 3+</p>
+                            <p><i class="fas fa-dot-circle"></i>Android version 4.2+</p>
+                            <p><i class="fas fa-dot-circle"></i>PHP 7+</p>
+                            <p><i class="fas fa-dot-circle"></i>mysql database</p>
+                        </div>
+                        <p><span class="required">We have made important steps yellow for up and running the project.</span></p>
+
+                    </article>
+
+
+                     <article id="sec-4">
+                        <h4 class="title">4 - Installation</h4>
+
+                        <p><span>4.1</span>PHP <b><em>version 7+</em></b> required(So update your Xampp control panel or install new
+                            one).</p>
+
+                        <h5 class="sub-title"><span>4.2</span>Database Setup</h5>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>In order to setting up database , first you create a database <b><em>“db_name”.</em></b></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Then you can easily import the <b><em>db.sql</em></b> file in your server.</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span><span class="required">Link the database to admin panel</span></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>For linking up, first you will find the file from this directory:</p>
+
+						<div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i><b><em>private\init.php.</em></b></p>
+                        </div>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Insert the <b><em>db_name</em></b> (if it is empty),
+							<b><em>username</em></b>, <b><em>password.</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 4.1"><img src="images/fig_4_1.png" alt=""></div>
+
+                        <h5 class="sub-title"><span>4.3</span>Installation on Locally</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Make sure that you have already installed <b><em>Xampp control panel</em></b>.</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Copy the <b><em>admin-panel</em></b> folder and paste it in your
+							Xampp's <b><em>htdocs</em></b> folder.</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Now <b><em>run</em></b> your Xampp Control Panel.</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Create a <b><em>database</em></b>. Database name will be
+							<b><em>"db_name"</em></b> or any other name</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Import the <b><em>db.sql</em></b> file in your created database.(db.sql file is
+                            located in the Main_files.)</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Find your pc <b><em>ip address</em></b>.</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open Command Prompt and type => <b><em>ipconfig</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 4.2"><img src="images/fig_4_2.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Then find the IPv4 address (example: 192.168.2.88),copy the address</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open your browser.In your browser url type:</p>
+
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>http://your_ip_address/bootic-admin</p>
+                            <p><i class="fas fa-dot-circle"></i>For example, my pc ip address is: 192.168.2.88</p>
+                            <p><i class="fas fa-dot-circle"></i>So the url will be: http://192.168.2.88/bootic-admin</p>
+                        </div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>If you see the admin login page, then admin-panel work successfully.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 4.3"><img src="images/fig_4_3.png" alt=""></div>
+
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>Username:  <b><em>admin</em></b></p>
+                            <p><i class="fas fa-dot-circle"></i>Password:  <b><em>123456</em></b></p>
+                        </div>
+
+
+                        <h5 class="sub-title"><span>4.4</span>Installation on Server</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>To install it on the live server, First import the databse to the server.</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Then copy the project folder and paste
+							it to your live server folder.</p>
+                         <p><span><i class="fas fa-angle-double-right"></i></span><span class="required">Please give the <b><em>writeable 777 permission </em></b>
+							to the following folders and the subfolders inside them:</span></p>
+
+						<div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i><span class="required">public\uploads</span></p>
+                            <p><i class="fas fa-dot-circle"></i><span class="required">public\uploads\thumb</span></p>
+                        </div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Login as Admin:</p>
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>UserName: <b>admin</b></p>
+                            <p><i class="fas fa-dot-circle"></i>Password: <b>123456</b></p>
+                        </div>
+
+                    </article>
+
+
+                    <article id="sec-5">
+                        <h4 class="title">5 - Connect the android app to the admin panel</h4>
+
+						<p><span>5.1</span>Make sure that you have already <b><em>installed</em></b> Android Studio.</p>
+						<p><span>5.2</span>Open Android Studio.</p>
+						<p><span>5.3</span>Click on “open an existing Android Studio project.”</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 5.1" ><img src="images/fig_5_1.png" alt=""></div>
+
+						<p><span>5.4</span>Browse and select project.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 5.2" ><img src="images/fig_5_2.png" alt=""></div>
+
+						<p><span>5.5</span>Select “Don’t remind me for this project” when gradle update
+							command will prompt.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 5.3" ><img src="images/fig_5_3.png" alt=""></div>
+
+						<h5 class="mt-15 mb-10"><span>5.6</span>Connect the admin panel to the app</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Open <b><em>Data > Helper</em></b></p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Open <b><em>com.w3e.core.bootic.data.helper.Constants.java</em></b></p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Replace <b>MAIN_URL</b> link with the link of the
+                            admin panel.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 5.4" ><img src="images/fig_5_4.png" alt=""></div>
+
+						<h5 class="mt-15 mb-10"><span>5.7</span>Changing API token</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Open the setting page of the admin panel.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Copy the api token.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 5.5" ><img src="images/fig_5_5.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open <b><em>Data > Helper</em></b></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open <b><em>com.w3e.core.bootic.data.helper.Constants.java</em></b></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Paste the <b>API_TOKEN</b> value that copied form
+                            admin panel.</p>
+
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 5.6" ><img src="images/fig_5_6.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Run Bootic in your android studio. If everything okay
+                            then you will see the videos in your application.</p>
+
+                    </article>
+
+
+
+                    <article id="sec-6">
+                        <h4 class="title">6 - Customizing the App</h4>
+
+						<h5 class="mt-15 mb-10"><span>6.1</span>Rename Package.</h5>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open Android Studio</p>
+
+                        <p class="sub-title"><span><b>6.1.1</b></span><b>Change your Android Studio Settings to auto import</b></p>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>For Windows/Linux, you can go to File -> Settings -> Editor -> General -> Auto Import -> Java and make the following changes:</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>change Insert imports on paste value to All</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>mark Add unambigious imports on the fly option as checked</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>On a Mac, do the same thing in Android Studio -> Preferences</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.1"><img src="images/Fig-53.PNG" alt=""></div>
+
+                        
+                        <p class="sub-title"><span><b>6.1.3</b></span><b>Create new package and move all directories</b></p>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Select Java, then right click button and create a new package (e.g.: mypackage)</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.2"><img src="images/Fig-55.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Select <b>data</b> and <b>ui</b> packages move to new package</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.3"><img src="images/Fig-56.png" alt=""></div>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.4"><img src="images/Fig-57.png" alt=""></div>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.5"><img src="images/Fig-58.png" alt=""></div>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.6"><img src="images/Fig-59.png" alt=""></div>
+
+
+						<p class="sub-title"><span><b>6.1.4</b></span><b>Invalidate cache and restart your studio</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.7"><img src="images/Fig-54.png" alt=""></div>
+
+
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Copy the new package name and paste to google-service.json file</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.8"><img src="images/Fig-60.png" alt=""></div>
+
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Copy the new package name and paste to applicationId in gradle(APP.gradle)</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 6.9"><img src="images/Fig-6-9.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Copy the new package name and paste to package in the manifest file</p>
+	
+						<div class="img-wrapper mtb-50" data-title="Figure 6.10"><img src="images/Fig-6-10.PNG" alt=""></div>
+						
+						
+
+                        <h5 class="sub-title"><span>6.3</span>Changing the App Name</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>To change Application name go to the
+                            values > strings.xml file</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Change the app_name item.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 6.11" ><img src="images/Fig-8.PNG" alt=""></div>
+
+						<h5 class="sub-title"><span>6.4</span>Change App Color</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Go to the values > colors.xml file</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Change the colorPrimary, colorPrimaryDark,
+                            colorAccent item values</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 6.12"><img src="images/Fig-9.PNG" alt=""></div>
+
+                    </article>
+
+					<article id="sec-7">
+
+                        <h4 class="title">7 - Sign in with Google</h4>
+
+						<h5 class="sub-title"><span>7.1</span>Creating API Key</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Open browser and go to google.com</p>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Sign in with your Gmail</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Go to 
+							<a target="_blank" href="https://developers.google.com/identity/sign-in/android/start-integrating">this link</a></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click On “ Configure A Project “</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 7.1"><img src="images/Fig-10.PNG" alt=""></div>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Enter a project name and click next</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 7.2"><img src="images/Fig-11.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Select Android</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Configure oath client id By giving Package
+                            name and SHA-1 signingcertificate</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 7.3"><img src="images/Fig-12.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>To get the package name open the
+                            AndroidManifest.xml and copy the package</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 7.5"><img src="images/Fig-14.PNG" alt=""></div>
+
+
+                        <h5 class="sub-title"><span>7.1 - </span>Getting the SHA-1 signing certificate</h5>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open Android Studio</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open your Project</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on Gradle (From Right Side Panel, you will see Gradle Bar)</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on Refresh (Click on Refresh from Gradle Bar, you will seeList
+                            Gradle scripts of your Project)</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on Your Project (Your Project Name form List (root))</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on Tasks</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on Android</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Double Click on signingReport
+                            (You will get SHA1 and MD5 in RunBar(Sometimes it will be in Gradle Console))</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Select app module from module
+                            selection dropdown to run or debug your application</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 7.6"><img src="images/Fig-15.PNG" alt=""></div>
+
+                    </article>
+
+
+                    <article id="sec-8">
+                        <h4 class="title">8 - Sign in with Facebook</h4>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Log In to your Facebook account</p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click <a target="_blank" href="https://developers.facebook.com/">this link</a></p>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>From drop-down menu, choose Add new App</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 8.1"><img src="images/Fig-22.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Give a display name</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 8.2"><img src="images/Fig-23.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click Products and choose Facebook Login</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 8.3"><img src="images/Fig-24.PNG" alt=""></div>
+
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click on android
+						 
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.4"><img src="images/fb_3.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click on the next
+
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.5"><img src="images/fb_4.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click on the next
+
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.6"><img src="images/fb_5.PNG" alt=""></div>
+
+						<div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>In the package name section add your project package name from manifest.</p>
+                            <p><i class="fas fa-dot-circle"></i>in the class name section add your LogInActivity.class package name</p>
+                            <p><i class="fas fa-dot-circle"></i>Click on save the button</p>
+                        </div>
+						
+						<div class="img-wrapper mtb-50" data-title="Figure 8.7"><img src="images/fb_6.PNG" alt=""></div>
+						
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click on the red mark button
+
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.8"><img src="images/fb_7.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Place your generated hash key in the Key Hashes field. Hit the save button then contiue
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.9"><img src="images/fb_8.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Hit the next button.
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.10"><img src="images/fb_9.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>In your android manifest, add the internet permission(its already added) then add the meta-data (its also added) . just place your api key.
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.11"><img src="images/fb_10.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>To make the status like click on the toggle button and go to basic settings.(or you can go to basic setting manually from side menubar )
+						 
+						<div class="img-wrapper mtb-50" data-title="Figure 8.12"><img src="images/fb_11.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>You will see a pop up where you have to select a category.
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.13"><img src="images/fb_12.PNG" alt=""></div>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>After selecting the category, click confirm.
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.14"><img src="images/fb_13.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Add a safe public url on that blank section and save it
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Now u can see the status live.
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.15"><img src="images/fb_14.PNG" alt=""></div>
+
+                        <h5>Getting the hash key</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>Go to 
+							<a target="_blank" href="https://developers.facebook.com/docs/android/getting-started/">this link</a></p>
+							
+						<div class="img-wrapper mtb-50" data-title="Figure 8.16"><img src="images/fb_15.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click  on the circle mark and download OpenSSL then extract the file. 
+							Place it to any drive.</p>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>Run command prompt  from where 
+							your java sdk locate.(here is mine C:\Windows\System32\cmd.exe) </p>
+						
+						<div class="img-wrapper mtb-50" data-title="Figure 8.17"><img src="images/fb_16.PNG" alt=""></div>
+
+
+						<div class="img-wrapper mtb-50" data-title="Figure 8.18"><img src="images/fb_17.PNG" alt=""></div>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Copy the red mark text and paste to your cmd console</p>
+						
+						<div class="img-wrapper mtb-50" data-title="Figure 8.19"><img src="images/fb_18.PNG" alt=""></div>
+
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>here in red mark 1 : 
+							I paste the copy text avoid where in android debug key give your alias key </p>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>then in %HOMEPATH%\ give the path of your jks file 
+								
+							in openssl sha1 –binary, give the path of your openSSL file </p>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>2. In password ..put key password</p>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>Then in the red mark line this is your hash key.</p>
+                    </article>
+
+
+
+					<article id="sec-9">
+                        <h4 class="title">9 - SMTP Server Config</h4>
+
+                        <p><span>9.1</span>To send the confirmation email and forgot password functionality
+							<span class="required">you have to configure your SMTP server</span>. To configure the SMTP server,
+							click the <b>SMTP Configuration</b> menu from sidebar
+							and change the credentials of the SMTP server.</p>
+
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-arrow-right"></i><b><em>Host </em></b></p>
+							<p><i class="fas fa-arrow-right"></i><b><em>Sender Email</em></b></p>
+							<p><i class="fas fa-arrow-right"></i><b><em>Username</em></b></p>
+							<p><i class="fas fa-arrow-right"></i><b><em>Password</em></b></p>
+							<p><i class="fas fa-arrow-right"></i><b><em>Port</em></b></p>
+							<p><i class="fas fa-arrow-right"></i><b><em>Encryption</em></b></p>
+                        </div>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 9.1"><img src="images/fig_15_10.png" alt=""></div>
+
+						<h5 class="sub-title"><span>9.2</span>Google SMTP Server Config</h5>
+
+						<p><span>9.2.1</span>Login to your Gmail account.</p>
+                        <p><span>9.2.2</span>Then visit the link:
+							<a href=_blank" href="https://myaccount.google.com/security">https://myaccount.google.com/security</a></p>
+                        <p><span>9.2.3</span>In the security page, turn off the <b><em>2-step verification</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 9.2"><img src="images/2-step_verification.PNG" alt=""></div>
+
+
+                        <p><span>9.2.4</span>Turn on the <b><em>less secure app access</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 9.3"><img src="images/less_secure_app.PNG" alt=""></div>
+
+						<p><span>9.2.4</span>Also visit the link:
+							<a target="_blank" href="https://accounts.google.com/b/0/DisplayUnlockCaptcha">https://accounts.google.com/b/0/DisplayUnlockCaptcha</a>
+							and <b><em>enable it</em></b>.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 9.4"><img src="images/3.PNG" alt=""></div>
+
+                    </article>
+					
+					
+
+                    <article id="sec-10">
+                        <h4 class="title">10 - Admob Configuration</h4>
+                        <p><span>10.1</span>Login with your Email id</p>
+                        <p><span>10.2</span>Go to <a href="https://apps.admob.com/v2/home?pli=1"><b>this link</b></a></p>
+
+                        <p><span>10.3</span>If its your first app tghen you have to select your country,
+							timezone and currency</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.1"><img src="images/fig_10_1.png" alt=""></div>
+
+						<p><span>10.4</span>Then you have to agree of the terms and condition and
+							<b><em>Create Admob Account</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.2"><img src="images/fig_10_2.png" alt=""></div>
+
+						<p><span>10.5</span>Then you click <b><em>Continue to Admob</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.3"><img src="images/fig_10_3.png" alt=""></div>
+
+						<p><span>10.6</span>Then you click <b><em>App</em></b> and <b><em>Create your first app</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.4"><img src="images/fig_10_4.png" alt=""></div>
+
+                        <p><span>10.7</span>If apps in play store then select <b><em>yes otherwise no</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.5"><img src="images/Fig-35.PNG" alt=""></div>
+
+                        <p><span>10.8</span>Then provide app information and <b><em>click add</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.6"><img src="images/Fig-36.PNG" alt=""></div>
+
+                        <p><span>10.9</span>Then you will get an <b><em>App ID.</em></b> Save it. You will need it later</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.7"><img src="images/Fig-37.PNG" alt=""></div>
+
+                        <p><span>10.10</span>Then click on <b><em>‘ CREATE AD UNIT ’</em></b> and you will find three type of
+                            ads.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.8"><img src="images/Fig-38.PNG" alt=""></div>
+
+                        <p><span>10.11</span>Select banner. Provide ad unit name and click on <b>‘ CREATE AD UNIT ‘</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.9"><img src="images/Fig-39.PNG" alt=""></div>
+
+                        <p><span>10.12</span><span class="required">Copy Banner <b><em>ad unit id</em></b> 
+							and save it. You will need it later</span></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.10"><img src="images/Fig-40.PNG" alt=""></div>
+
+						 <p><span>10.13</span>Then again go back and click <b><em>‘ ADD AD UNIT ’</em></b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.11"><img src="images/fig_10_11.png" alt=""></div>
+
+                        <p><span>10.14</span>Select <b><em>‘ Interstitial ’</em></b> ad type.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.12"><img src="images/Fig-38.PNG" alt=""></div>
+
+						<p><span>10.15</span>You will find a page like this. Provide ad unit name and select
+							<b>‘ CREATE AD UNIT ’</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.13"><img src="images/fig_10_13.png" alt=""></div>
+
+                        <p><span>10.16</span>Copy <b><em>ad unit id</em></b> and save it . You will need it later .</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.14"><img src="images/fig_10_14.png" alt=""></div>
+
+                        <p><span>10.17</span>Now get saved <b>Admob App ID</b>, Banner <b>Ad Unit ID</b>.
+                            Then go to <b>Admin Panel</b> click <b>Admob</b> from sidebar. Put <b>App ID</b> and <b>Ad Unit ID</b>
+							in the <b>Banner Ad</b> in the admin panel.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.15"><img src="images/fig_10_15.png" alt=""></div>
+
+                        <p><span>10.18</span>Now get saved <b>Admob App ID</b>, Interstitial <b>Ad Unit ID</b>.
+                            Then go to <b>Admin Panel</b>. Click <b>Admob</b> form sidebar. Put <b>App ID</b> and <b>Ad Unit ID</b>
+							in the <b>Interstitial Ad</b> in the admin panel.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 10.16"><img src="images/fig_10_16.png" alt=""></div>
+
+						<p><span>10.19</span>You can hide admob from the ap by clicking the on/off toggle button form the header.</p>
+
+                    </article>
+
+
+                    <article id="sec-11">
+                        <h4 class="title">11 - Configure firebase for push Notification</h4>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Go to <a href="https://console.firebase.google.com">firebase console</a> and login to your google account.</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click on <b>Add project</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.1"><img src="images/Fig-44.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Provide a project name and hit on <b>“Create Project”</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.2"><img src="images/Fig-45.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Now click on <b>“Android Icon” </b> to configure project for android</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.3"><img src="images/Fig-46.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Open <b>“Android Manifest”</b> and copy package name</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.4"><img src="images/Fig-47.PNG" alt=""></div>
+
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Paste the package name in <b>“Register App”</b> field</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Download the <b>“google service.json”</b> file</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.5"><img src="images/Fig-48.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Copy <b>google-service.json</b> file</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.6"><img src="images/Fig-49.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Go to your <b>project</b></p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Select <b>project</b></p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.7"><img src="images/Fig-50.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Browse Bootic and <b>replace</b> the google-service.json file</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.8"><img src="images/Fig-51.PNG" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Now <b>sync</b> your project again</p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Now Go to <a href="https://console.firebase.google.com">firebase console</a></p>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click <b>Setting icon</b> on project setting</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.9"><img src="images/fig_15_15.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Click <b>Cloud Messaging</b> and copy the server key</p>
+
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.10"><img src="images/fig_15_16.png" alt=""></div>
+
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Paste the copied <b>auth key</b> in the auth key field in the admin panel.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 11.11"><img src="images/fig_11_2.png" alt=""></div>
+
+                    </article>
+
+
+					<article id="sec-12">
+                        <h4 class="title">12 - Publishing the app in Playstore</h4>
+
+						<h5 class="sub-title"><span>12.1</span>Prepare your app</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Change the package name and app name.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Generate sign apk.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Configure AdMob according to your account settings</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Change the app logo.</p>
+
+
+						<h5 class="sub-title"><span>12.2</span>Prepare resources</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Prepare one logo with size 512px * 512 px</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Take a minimum of 2 screenshots of your app</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Generate feature graphics screen1024px * 512px </p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Reference link:
+							<a href="https://support.google.com/googleplay/android-developer/answer/1078870?hl=en">https://support.google.com/googleplay/android-developer/answer/1078870?hl=en</a></p>
+
+
+						<h5 class="sub-title"><span>12.3</span>Submit your app on play store</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Sign in to your play store account with your credential.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Create an app.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Go to “App Release” section.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Fillup application short and long description, upload a high-resolution logo, app screenshots and feature graphics that was prepared earlier.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Also filling the privacy policy link and other required information.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Click on save and if all required field submitted properly then you will find a green check mark on app release.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Now go to “App releases” section and go to manage production release.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Upload you signed apk and leave a short note in “What's new in this release” section.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Save this section.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Now finish “Content Rating” and “Store Listing” section with proper instruction and back to “App release” section again.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Finally, review your app and submit for publication.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Reference link:
+							<a href="https://support.google.com/googleplay/android-developer/answer/1078870?hl=en">https://www.youtube.com/watch?v=udPWeFUZzdo</a></p>
+
+
+						<h5 class="sub-title"><span>12.4</span>App submission</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>After submission, you won’t find your application immidiately on playstore.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Play store team will review your app. And after review your application will be published on playstore.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Review time could max 48 hours.</p>
+
+
+						<h5 class="sub-title"><span>12.5</span>Note</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Here are some important tips for your application that will reduce the possibility of application rejection by play store.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Do not forget to change the app name and package name.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Do not forget to change the application logo.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Try not to download image or icons directly from Google. And try to use copyright free resources.</p>
+						<p><span><i class="fas fa-angle-double-right"></i></span>User your own AdMob credentials and link your application with AdMob account.</p>
+
+                    </article>
+
+
+
+                    <h2>Admin Panel</h2>
+
+                    <article id="sec-13">
+                        <h4 class="title">13 - Folder Structure of Admin Panel</h4>
+                        <p><span>13.1</span>Inside the project folder, you will see the following directories that are important
+                            to setup and customizing the admin panel.</p>
+
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>private</p>
+                            <p><i class="fas fa-dot-circle"></i>public</p>
+                            <p><i class="fas fa-dot-circle"></i>.htaccess</p>
+                        </div>
+
+						<p><span>13.2</span>public directory: All the public files like outlook, uploaded images/videos, apis are inside this directory.</p>
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>public\api : List of all apis.</p>
+                            <p><i class="fas fa-dot-circle"></i>public\common\php : Common files like header, footer, sidebar.</p>
+                            <p><i class="fas fa-dot-circle"></i>public\common\other : Custom Styte and Script file.</p>
+                            <p><i class="fas fa-dot-circle"></i>backend\plugin-frameworks: All the external style and javascript files.</p>
+                            <p><i class="fas fa-dot-circle"></i>backend\uploads: All the uploaded images.</p>
+                        </div>
+
+						<p><span>13.3</span>private directory: All the private files like models, controllers files are inside this directory.</p>
+                        <div class="mtb-10 ml-15">
+                            <p><i class="fas fa-dot-circle"></i>private\controllers : All the controller files.</p>
+                            <p><i class="fas fa-dot-circle"></i>private\models : All the models.</p>
+                            <p><i class="fas fa-dot-circle"></i>private\vendor : External php scripts like phpmailer.</p>
+                            <p><i class="fas fa-dot-circle"></i>private\init.php : All the settings like database credential, uploaded folder name, item count for pagination.</p>
+                        </div>
+
+						<p><span class="required">Please make sure you have change the <em><b>database credential</b></em> in the
+							<em><b>private/init.php</b></em> file.</span></p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 13.1"><img src="images/fig_11_1.png" alt=""></div>
+
+						<p><span class="required">Please make sure you have set the writable 777 permission to the
+							<em><b>public/uploads</b></em> and <em><b>public/uploads/thumb</b></em> folder</span></p>
+
+                    </article>
+
+
+                    <article id="sec-14">
+                        <h4 class="title">14 - Functionality of Admin Panel</h4>
+
+						<h5 class="sub-title"><span>14.1</span>Categories</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Admin is able to add/update/delete categories form the admin panel.
+                            To add category admin have to add an image and a set a title for the category.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.1"><img src="images/fig_15_1.png" alt=""></div>
+
+						<h5 class="sub-title"><span>14.2</span>Attributes</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Admin is able to add/delete/update product attributes.
+                            To add attributes, admin have to set the title of the attribute and set the attribute value of the 
+							attribute. Admin have to add comma separated attribute values in the attribute form. 
+							Admin is able to change the attribute values form attribute page without loading the apge.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.2"><img src="images/fig_15_2.png" alt=""></div>
+
+                        <h5 class="sub-title"><span>14.3</span>Product</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Admin is able to add/delete/update products.
+							To add a product admin has to upload a primary image. Put the purchase price, previous price(if have any) 
+							and sellig price. Admin have to select the category, featured(Yes/No). Admi n have to put product description, 
+							tags. Admin is able to upload multiple product images. And lastly admin have to set the inventory of the product. 
+							From the Add Attribute button admin is able to add attributes and the quantity of the 
+							product.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 14.3"><img src="images/fig_15_3.jpg" alt=""></div>
+
+                        <h5 class="sub-title"><span>14.4</span>Orders</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Admin is able to view all the orders. 
+						Admin can change the order status(Pending/Clear). Also admin is able to see the order details. Admin is 
+						able to generate invoice in pdf format.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 14.4"><img src="images/fig_15_4.jpg" alt=""></div>
+
+                        <h5 class="sub-title"><span>14.5</span>Payment</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>We have integrated <b>braintree</b> payment method.
+						Admin has to put braintree credentials(Environment, Merchant ID, Public Key, Private Key) to the admin panel.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 14.5"><img src="images/fig_15_5.png" alt=""></div>
+
+
+                        <h5 class="sub-title"><span>14.6</span>Registered users</h5>
+                        <p><span><i class="fas fa-angle-double-right"></i></span>Admin is able to view/delete all the
+                            registered users form Registered users menu.</p>
+
+                        <div class="img-wrapper mtb-50" data-title="Figure 14.6"><img src="images/fig_15_6.png" alt=""></div>
+
+						<h5 class="sub-title"><span>14.7</span>Google Admob</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Admin can configure admob credentials from admin panel.
+							Also admin can on/off admin from the on/off button in the admob page.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.7"><img src="images/fig_15_7.png" alt=""></div>
+
+						<h5 class="sub-title"><span>14.8</span>Push Notification</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>Admin can send push notification from the admin panel.
+							First, Admin have to put the <em><b>AuthKey</b></em> in the AuthKey field. Then create a notification
+                            by inserting title and description. To send the notification admin have to send the notify button.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.8"><img src="images/fig_15_8.png" alt=""></div>
+
+						<p><span><b>Note : </b></span>Please follow the steps we described in
+                            <b>11 - Configure firebase for push Notification</b> to configure push notification</p>
+
+						<h5 class="sub-title"><span>14.9</span>Configuration</h5>
+						<p><span><i class="fas fa-angle-double-right"></i></span>In the configuration page, admin will be able to change the icon, site title
+							and site tag line in the Site Configuration form.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.9"><img src="images/fig_15_9.png" alt=""></div>
+
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Also, admin will be able to configure the smtp server
+							credentials for the user registration process from the app.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.10"><img src="images/fig_15_10.png" alt=""></div>
+
+
+						<h5 class="sub-title"><span>14.10</span>Setting</h5>
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>From the setting page, Admin will be able to change the api key,
+							which used in the app.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.11"><img src="images/fig_15_11.png" alt=""></div>
+
+
+						<p><span><i class="fas fa-angle-double-right"></i></span>Also, Admin will be able to change
+							<em><b>the currency name and currency font</b></em></p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.12"><img src="images/fig_15_12.png" alt=""></div>
+						
+						<p><span><i class="fas fa-angle-double-right"></i></span>Also, Admin will be able to change
+							<em><b>the TAX</b></em>.</p>
+
+						<div class="img-wrapper mtb-50" data-title="Figure 14.13"><img src="images/fig_15_13.png" alt=""></div>
+
+                    </article>
+
+                </div><!--main-content-->
+            </div><!--col-md-4-->
+        </div><!--row-->
+    </div><!--container-->
+</section>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/logo-white.png" alt="Logo Image"></a>
+            <h4 class="mt-20"><a class="decoration-un" target="_blank" href="https://codecanyon.net/user/w3engineers/portfolio">If you like our
+                template please rate us 5 stars</a></h4>
+        </div><!--container-->
+    </div><!--footer-top-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright © w3engineers Ltd.</p>
+                </div><!--col-md-6-->
+
+                <div class="col-md-6">
+                    <ul class="icons">
+                        <li><a target="_blank" href="https://www.facebook.com/w3engineers/"><i
+							class="fab fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/hashtag/w3engineers"><i
+							class="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/w3engineers"><i
+							class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div><!--col-md-6-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--footer-bottom-->
+</footer>
+
+<!-- library -->
+<script src="plugin-frameworks/jquery-3.3.1.min.js"></script>
+<script src="plugin-frameworks/jquery.sticky-sidebar.min.js"></script>
+<script src="common/script.js"></script>
+
+
+</body>
+</html>
+
